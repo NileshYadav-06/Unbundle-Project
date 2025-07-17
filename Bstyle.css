@@ -1,0 +1,252 @@
+/* STATS CAROUSEL */
+
+.stats-carousel {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fffaf5;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollCarousel 20s linear infinite;
+  will-change: transform;
+}
+
+.stat-item {
+  flex: 0 0 auto;
+  min-width: 250px;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.stat-item i {
+  color: #f8943f;
+  font-size: 18px;
+}
+
+@keyframes scrollCarousel {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Slower carousel on mobile */
+@media (max-width: 767px) {
+  .carousel-track {
+    animation: scrollCarouselMobile 25s linear infinite;
+  }
+
+  @keyframes scrollCarouselMobile {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  .stat-item {
+    min-width: 200px;
+    font-size: 14px;
+  }
+}
+
+/* -------------------- ROOT CANAL SECTION --------------------- */
+
+.b-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.b-section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.b-section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.b-card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .b-card-grid {
+    flex-direction: row;
+  }
+}
+
+.b-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f8d4b7;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  flex: 1;
+}
+
+.b-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .b-card-inner {
+    flex-direction: row;
+  }
+}
+
+.b-card-image {
+  background-color: #f3ebe7;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.b-card-image img {
+  transform: scale(1.5);
+  max-width: 100%;
+  height: auto;
+}
+
+.b-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.b-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.b-card-subtitle {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.b-card-list-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.b-card-list {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.b-card-list li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.b-price-label {
+  color: #f97316;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.b-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.b-btn {
+  display: inline-block;
+  background-color: #f97316;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.b-btn:hover {
+  background-color: #ea580c;
+}
+
+.b-card-image-img {
+  height: 100%;
+}
+
+/* -------------------- TRANSFORMATION SECTION --------------------- */
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.transformation-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.patients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.patient-card {
+  text-align: center;
+}
+
+.patient-card img {
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 2px auto;
+}
+
+.patient-card h4 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.patient-card span {
+  color: orange;
+  font-size: 14px;
+}

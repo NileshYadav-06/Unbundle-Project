@@ -1,0 +1,264 @@
+
+
+
+/* why choose section 6 */
+.why-choose-clove-section {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 0;
+}
+
+.why-choose-clove-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clove-text-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.clove-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.clove-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.clove-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clove-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.clove-plus {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.clove-image {
+  flex: 1;
+  text-align: center;
+}
+
+.clove-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .clove-text-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clove-list {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .clove-list li {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* What our patient say */
+.e-patients-section {
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
+.e-patients-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.e-patients-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.e-patients-grid {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.e-patients-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.e-patient-card {
+  flex-shrink: 0;
+  height: 400px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.e-patient-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+  border-radius: 14px;
+}
+
+.e-patient-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.e-patient-info-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.e-patient-name {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.e-patient-city {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.e-patient-treatment {
+  font-size: 14px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .e-patient-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .e-patient-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .e-patient-info,
+  .e-patient-info-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* book appointment form section2 */
+.form-section2 {
+  background-color: #fffaf5;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-section2-heading h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.f-hero-right-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.f-hero-right-2 input[type="text"],
+.f-hero-right-2 input[type="tel"] {
+  width: 300px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 70px;
+}
+
+.captcha-value-2 {
+  background-color: #462512;
+  color: #fff;
+  padding: 8px 36px;
+  border-radius: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.checkbox-btn-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.policy-2 {
+  font-size: 13px;
+  color: #444;
+}
+
+.form-btn-2 {
+  background-color: #f8943f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 200px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .f-hero-right-2 input[type="text"],
+  .f-hero-right-2 input[type="tel"],
+  .form-btn-2 {
+    width: 100%;
+  }
+}
+
